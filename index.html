@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Household Chores</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <h2>Household Chores</h2>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+            <div class="form-item">
+                <label for="chore">Weekly Chores</label>
+                <select id="chore">
+                  <option value="" disabled selected></option>
+                  <option value="Trash">Take out trash</option>
+                  <option value="Dishwasher">Do dishwasher</option>
+                  <option value="Recycle">Recycle</option>
+                  <option value="Bathroom">Clean bathroom</option>
+                  <option value="Roomba">Empty Roomba</option>
+                </select>
+              </div>
+        </div>
+
+        <div class="form-item">
+          <label for="description">Description</label>
+          <input type="text" id="description" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="due_day">Do on...</label>
+          <select id="due_day">
+            <option value="" disabled selected>select day</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h2>Do Your Chores...</h2>
+    <ul id="chore-list"></ul>
+  </body>
+</html>
